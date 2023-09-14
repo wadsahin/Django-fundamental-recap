@@ -1,0 +1,15 @@
+{% extends 'root.html' %}
+{% load static %}
+
+{% block titile %}django form design{% endblock titile %}
+
+{% block content %}
+<div>
+    <h2>Django Forms</h2>
+    <form action="">
+        {{fm.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock content %}

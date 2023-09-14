@@ -1,0 +1,34 @@
+{% extends 'root.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+<link rel="stylesheet" href="{% static 'css/bootstarp.css'%}">
+{% endblock link %}
+{% block titile %}django model design{% endblock titile %}
+
+{% block content %}
+
+<div>
+    <h2>Django Model</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in dt %}
+            <tr>
+                <td>{{i.uid}}</td>
+                <td>{{i.first_name}}</td>
+                <td>{{i.last_name}}</td>
+                <td>{{i.email}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

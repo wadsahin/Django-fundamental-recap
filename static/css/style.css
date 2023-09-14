@@ -1,0 +1,42 @@
+button{
+    padding: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+h1{
+    color: mediumslateblue;
+}
+
+.heading-4{
+    color: red;
+    text-align: center;
+}
+
+/* footer desing */
+.t-decoration{
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width: 576px) {
+    .row{
+        text-align: center;
+    }
+    
+}
+/* footer desing  end*/
+
+/* Django model.html apply style */
+
+table, tr, th, td{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 12px;
+}

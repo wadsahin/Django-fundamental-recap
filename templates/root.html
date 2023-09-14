@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    {% block link %}{% endblock link %}
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+
+    {% block content %}
+    
+    {% endblock content %}
+   
+    <!-- footet start -->
+    <div class="footer bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <h5 class="text-uppercase text-warning pb-4  ">company name</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut quae ratione earum voluptatibus. Esse consectetur excepturi at temporibus ipsam! Debitis maxime atque praesentium unde eaque, sit voluptatum placeat beatae.</p>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <h5 class="text-uppercase text-warning pb-4  ">products</h5>
+
+                    <p><a class="text-white t-decoration" href="#">The Providers</a></p>
+                    <p><a class="text-white t-decoration" href="#">Creativity</a></p>
+                    <p><a class="text-white t-decoration" href="#">SourceFiles</a></p>
+                    <p><a class="text-white t-decoration" href="#">Bootstrap 5 Alpha</a></p>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+
+                    <h5 class="text-uppercase text-warning pb-4">useful links</h5>
+                    <p><a class="text-white t-decoration" href="#">Your Account </a></p>
+                    <p><a class="text-white t-decoration" href="#">Become an Affiliates</a></p>
+                    <p><a class="text-white t-decoration" href="#">Shipping Rates</a></p>
+                    <p><a class="text-white t-decoration" href="#">Help</a></p>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <h5 class="text-uppercase text-warning pb-4  "> contact</h5>
+                    <p>
+                        <i class="fas fa-home me-3"></i>Sylhet, SyL 3100, BD
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>wadsahinalom@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone me-3"></i>+88017546549643
+                    </p>
+                    <p>
+                        <i class="fas  fa-print me-3"></i>+01 335 633 77
+                    </p>
+
+                </div>
+            </div>
+            <hr>
+
+        <!-- second-row -->
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="copyright">
+                    <p>Copyright &copy; 2022 all rights reserved by: <a class="t-decoration" href="#"><strong class="text-warning font-weight-bold">The Providers</strong></a></p>
+                </div>
+            </div>
+
+            <!-- social-media-iconPackage- start -->
+            <div class="col-12 col-md-12 col-lg-6">
+                <div>
+                    <ul class="list-unstyled list-inline">
+                      <a href="#" style="font-size: 23px;" class="text-white "><li class="fab fa-facebook me-2"></li></a>
+                      <a href="#" style="font-size: 23px;" class="text-white "><li class="fab fa-linkedin me-2"></li></a>
+                      <a href="#" style="font-size: 23px;" class="text-white "><li class="fab fa-twitter me-2"></li></a>
+                      <a href="#" style="font-size: 23px;" class="text-white "><li class="fab fa-instagram me-2"></li></a>
+                      <a href="#" style="font-size: 23px;" class="text-white "><li class="fab fa-google me-2"></li></a>
+                    </ul>
+                </div>
+           
+            </div>
+            <!-- social-media-iconPackage- end -->
+        </div>
+      </div>
+    </div>
+    <!-- footet end -->
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>
